@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-md-12 placeholder placerholder-lg bg-secondary text-white mb-5">
+        <h1> Conversor de Monedas </h1>
+    </div>
+</div>
+
+<form action="/" method="post">
+    <div class="col-md-4 mb-2">
+        <label> De: </label>
+        <select class="form-select" name="demoneda">
+            <option selected> Selecione una moneda </option>
+            <option> USD - Dolar estadounidense </option>
+            <option> DOP - Peso dominicano </option>
+            <option> EUR - Euro </option>
+        </select>
+    </div> 
+
+    <div class="col-md-4 mb-4">
+        <label> A: </label>
+        <select class="form-select" name="amoneda">
+            <option selected> Selecione una moneda </option>
+            <option> USD - Dolar estadounidense </option>
+            <option> DOP - Peso dominicano </option>
+            <option> EUR - Euro </option>
+        </select>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <label> Cantidad que desea convertir: </label>
+        <input type="text" class="form-control" name="cantidadmoneda">
+    </div> 
+
+    <div class="col-md-4 mb-3">
+        <button type="submit"> Convertir </button>
+    </div>
+
+    <h4> Resultado: @ViewBag.Resultado </h4> <br />
+
+    <h5> Divisas: </h5>
+    <h6> 1,00 Dólar estadounidense = 55,1913 DOP </h6>
+    <h6> 1,00 Pesos dominicanos = 0.0181137 USD </h6>
+    <h6> 1,00 Dólar estadounidense = 0,936065 EUR </h6>
+    <h6> 1,00 Euro = 1,06804 USD </h6>
+    <h6> 1,00 Euro = 58,9569 DOP </h6>
+    <h6> 1,00 Pesos dominicanos = 0,0169618 EUR  </h6>
+
+</form>
+
